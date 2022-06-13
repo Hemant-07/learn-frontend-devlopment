@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of all and even no.</title>
+</head>
+<body>
+    <script>
+function EvenOddSum(arr, n)
+{
+     
+     
+    let even = 0;
+    let odd = 0;
+    for (let i = 0; i < n; i++)
+    {
+     
+        // Loop to find even, odd sum
+        if (i % 2 == 0)
+            even += arr[i];
+        else
+            odd += arr[i];
+    }
+ 
+    document.write("Even index positions sum " + even);
+    document.write("<br>" + "Odd index positions sum " + odd);
+
+}
+let arr = [ 10, 12, 13, 14, 25, 56,47,19,21,23,51,60 ];
+    let n = arr.length;
+ 
+    EvenOddSum(arr, n);
+
+
+    </script>
+    
+</body>
+</html>
